@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <title>Phil Crawley</title>
+</head>
+<body>
+    <nav class="nav" id="nav">
+        <div class="nav__left">
+            <a href="#home" class="nav__left-logo">PC</a>
+        </div>
+        <div class="nav__right">
+            <input type="checkbox" id="nav-toggle">
+            <label for="nav-toggle" class="nav__container">
+                <div class="nav__container-button"></div>
+            </label>
+            <ul class="nav__right-list" id="navList">
+                <li class="nav__right-list--item">
+                    <a href="#about">About</a>
+                </li>
+                <li class="nav__right-list--item">
+                    <a href="#projects">Projects</a>
+                </li>
+                <li class="nav__right-list--item">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="socials">
+        <ul class="socials__container">
+            <!-- <li class="socials__container-icon">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </li> -->
+            <li class="socials__container-icon">
+                <a href="https://www.linkedin.com/in/philip-crawley/"><i class="fab fa-linkedin"></i></a>
+            </li>
+            <!-- <li class="socials__container-icon">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </li> -->
+        </ul>
+    </div>
+
+    <main class="main" id="home">
+        <div class="main__content">
+            <h3 class="main__content-h3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Hi, my name is</h3>
+            <h1 class="main__content-h1-1" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Phil Crawley</h1>
+            <h1 class="main__content-h1-2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">Front End Web Developer</h1>
+            <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">I'm a <span>Game Developer</span> turned <span>Web Developer</span> that loves building things and always striving to futher my knowledge and learn something new.</p>
+            <a href="#" class="link-btn" data-aos="fade-right" data-aos-delay="1200">My Projects</a>
+        </div>
+    </main>
+
+    <section class="about" id="about">
+        <div class="about__content" data-aos="fade-up" data-aos-duration="1000">
+            <h4 class="about__content-heading">About Me</h4>
+            <p>Hello! My name is Phil and I am a Game Developer turned Web Developer.
+                I originally got into web development back mid 2021 when my now mentor was showing me some of his work that he has done.
+                We sat there for hours looking through each line of code and I was hooked.
+            </p>
+            <p>After High School, I moved up to Canada to pursue a career in Game Development. Numerous different coding languages, adobe, sound design and other things.
+                Eventually I had unforseen circumstances and I had to put my schooling on hold and move back down to the states.
+            </p>
+            <p>Fast forward to today with my love of programming and making things, I continued to work hard and better myself by taking many classes and online courses to help refine my skills as a developer.</p>
+            <p>Here is something technologies that I am familiar with:</p>
+            <ul class="about__content-list">
+                <li class="about__content-list-item">HTML</li>
+                <li class="about__content-list-item">CSS</li>
+                <li class="about__content-list-item">JavaScript (ES6+)</li>
+                <li class="about__content-list-item">JQuery</li>
+                <li class="about__content-list-item">Bootstrap 5</li>
+                <li class="about__content-list-item">Sass</li>
+                <li class="about__content-list-item">React</li>
+                <li class="about__content-list-item">Git/Github</li>
+                <li class="about__content-list-item">AWS: S3 and Route53</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h4 class="about__content-heading" data-aos="fade-up" data-aos-duration="1000">My Projects</h4>
+        <ul class="projects__content">
+
+            <li class="projects__content-container" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                <div class="projects__content-container-img">
+                    <div class="picturefill">
+                        <img src="images/mitsubishi.PNG" alt="mitsubishi">
+                    </div>          
+                </div>
+                <div class="projects__content-container-info">
+                    <p class="projects__content-container-info--overline">Featured Project</p>
+                    <h3 class="projects__content-container-info--title">
+                        <a href="Phils_project_01/index.html">Mitsubishi Dealer</a>
+                    </h3>
+                    <div class="projects__content-container-info--discription">
+                        <p>This is the first project that I undertook from my mentor. This is a fully responsive website built with HTML, CSS, and vanilla JS. It has carousels, functional inputs, popup, touch capability and other things. </p>
+                    </div>
+                    <a href="Phils_project_01/index.html" class="projects__content-container-info--link">
+                        <i class="fas fa-solid fa-link link-color"></i>
+                    </a>
+                </div>
+            </li>
+
+            <li class="projects__content-container projects__content-container-2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                <div class="projects__content-container-img projects__content-container-2-img">
+                    <img src="images/expenses.PNG" alt="expenses">
+                </div>
+                <div class="projects__content-container-info projects__content-container-2-info">
+                    <p class="projects__content-container-info--overline">Featured Project</p>
+                    <h3 class="projects__content-container-info--title">
+                        <a href="https://feedatron.github.io/First-React-Project/">Expenses Tracker</a>
+                    </h3>
+                    <div class="projects__content-container-info--discription">
+                        <p>This is one of my first React projects. It is an expense tracker that you can add and filter expenses by years and full of conditionals. </p>
+                    </div>
+                    <a href="https://feedatron.github.io/First-React-Project/" class="projects__content-container-info--link">
+                        <i class="fas fa-solid fa-link link-color"></i>
+                    </a>
+                </div>
+            </li>
+
+            <li class="projects__content-container" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                <div class="projects__content-container-img">
+                    <img src="images/natours.PNG" alt="natours">
+                </div>
+                <div class="projects__content-container-info">
+                    <p class="projects__content-container-info--overline">Featured Project</p>
+                    <h3 class="projects__content-container-info--title">
+                        <a href="Advanced CSS Training/Natours Starter Project/index.html">Natours</a>
+                    </h3>
+                    <div class="projects__content-container-info--discription">
+                        <p>This is a project that I completed in one of my courses. It is a website for booking outdoor tours. Fully responsive with plenty of animations and transitions. Really goes in-depth of the limits of CSS.</p>
+                    </div>
+                    <a href="Advanced CSS Training/Natours Starter Project/index.html" class="projects__content-container-info--link">
+                        <i class="fas fa-solid fa-link link-color"></i>
+                    </a>
+                </div>
+            </li>
+
+            <li class="projects__content-container projects__content-container-2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                <div class="projects__content-container-img projects__content-container-2-img">
+                    <img src="images/trillo.PNG" alt="trillo">
+                </div>
+                <div class="projects__content-container-info projects__content-container-2-info">
+                    <p class="projects__content-container-info--overline">Featured Project</p>
+                    <h3 class="projects__content-container-info--title">
+                        <a href="Advanced CSS Training/Trillo Starter Project/index.html">Trillo</a>
+                    </h3>
+                    <div class="projects__content-container-info--discription">
+                        <p>Another project from one of my courses. This is a vacation booking app that is fully responive and has some cool button animations. I also really like the look of this one aesthetically.</p>
+                    </div>
+                    <a href="Advanced CSS Training/Trillo Starter Project/index.html" class="projects__content-container-info--link">
+                        <i class="fas fa-solid fa-link link-color"></i>
+                    </a>
+                </div>
+            </li>
+            <li class="projects__content-container" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                <div class="projects__content-container-img">
+                    <img src="images/nexter.PNG" alt="nexter">
+                </div>
+                <div class="projects__content-container-info">
+                    <p class="projects__content-container-info--overline">Featured Project</p>
+                    <h3 class="projects__content-container-info--title">
+                        <a href="Advanced CSS Training/Nexter Starter Project/index.html">Nexter</a>
+                    </h3>
+                    <div class="projects__content-container-info--discription">
+                        <p>This project was built when I was learning the in's and out's of flex grid. Another fully responsive project that is a website for people looking for their dream home.</p>
+                    </div>
+                    <a href="Advanced CSS Training/Nexter Starter Project/index.html" class="projects__content-container-info--link">
+                        <i class="fas fa-solid fa-link link-color"></i>
+                    </a>
+                </div>
+            </li>
+            <li class="projects__content-container projects__content-container-2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                <div class="projects__content-container-img projects__content-container-2-img">
+                    <img src="images/simon.PNG" alt="simon">
+                </div>
+                <div class="projects__content-container-info projects__content-container-2-info">
+                    <p class="projects__content-container-info--overline">Featured Project</p>
+                    <h3 class="projects__content-container-info--title">
+                        <a href="Simon Game Challenge Starting Files/index.html">Simon Game</a>
+                    </h3>
+                    <div class="projects__content-container-info--discription">
+                        <p>This project is the fun little pattern game Simon that I built with JQuery. I still go back to it every now and again just to play a round or two.</p>
+                    </div>
+                    <a href="Simon Game Challenge Starting Files/index.html" class="projects__content-container-info--link">
+                        <i class="fas fa-solid fa-link link-color"></i>
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contact__container" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
+            <h2 class="contact__container-overline">Want to reach out?</h2>
+            <h2 class="contact__container-title">Get In Touch</h2>
+            <p>I'm currently employed as a NOC/SOC monitor, but I'd love to make the switch to being a web developer for my career.
+                Whether you have a question or want to say hi, I'll try my best to get back to you!
+            </p>
+            <a href="mailto:pcrawley777@gmail.com" class="link-btn"> Contact Me</a>
+        </div>
+    </section>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
