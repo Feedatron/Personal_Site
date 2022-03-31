@@ -27,46 +27,50 @@
             </div>
         </div>
         <div class="header_nav-bottom padding160">
-            <div class="header_bottom-box">
+            <div class="header_bottom-box header_bottom-box-left">
                 <img src="images/Group 1294.png" alt="" class="header_bottom-logo">
                 <h4 class="header_bottom-h4">
                     Hometown Mitsubishi
                 </h4>
             </div>
-            <div class="header_bottom-box">
-                <div class="header_bottom-box-small">
+            <input type="checkbox" id="top-nav-toggle">
+            <label for="top-nav-toggle" class="top-nav-menu-button-container">
+                <div class="top-nav-menu-button"></div>
+            </label>
+            <ul class="header_bottom-box header_bottom-box-middle">
+                <li class="header_bottom-box-small">
                     <a href="" class="header_bottom-link">New</a>
                     <i class="fas fa-solid fa-chevron-down header_bottom-cheveron"></i>
-                </div>
-                <div class="header_bottom-box-small">
+                </li>
+                <li class="header_bottom-box-small">
                     <a href="" class="header_bottom-link">Pre-Owned</a>
                     <i class="fas fa-solid fa-chevron-down header_bottom-cheveron"></i>
-                </div>
-                <div class="header_bottom-box-small">
+                </li>
+                <li class="header_bottom-box-small">
                     <a href="" class="header_bottom-link">Research Models</a>
                     <i class="fas fa-solid fa-chevron-down header_bottom-cheveron"></i>
-                </div>
-                <div class="header_bottom-box-small">
+                </li>
+                <li class="header_bottom-box-small">
                     <a href="" class="header_bottom-link">Service & Parts</a>
                     <i class="fas fa-solid fa-chevron-down header_bottom-cheveron"></i>
-                </div>
-                <div class="header_bottom-box-small">
+                </li>
+                <li class="header_bottom-box-small">
                     <a href="" class="header_bottom-link">Specials</a>
                     <i class="fas fa-solid fa-chevron-down header_bottom-cheveron"></i>
-                </div>
-                <div class="header_bottom-box-small">
+                </li>
+                <li class="header_bottom-box-small">
                     <a href="" class="header_bottom-link">Finance</a>
                     <i class="fas fa-solid fa-chevron-down header_bottom-cheveron"></i>
-                </div>
-                <div class="header_bottom-box-small">
+                </li>
+                <li class="header_bottom-box-small">
                     <a href="" class="header_bottom-link">About</a>
                     <i class="fas fa-solid fa-chevron-down header_bottom-cheveron"></i>
-                </div>
-                <div class="header_bottom-box-small">
+                </li>
+                <li class="header_bottom-box-small">
                     <a href="" class="header_bottom-link">Espanol</a>
-                </div>
-            </div>
-            <div class="header_bottom-box">
+                </li>
+            </ul>
+            <div class="header_bottom-box .header_bottom-box-right">
                 <img src="images/search.png" alt="" class="header_bottom-img">
                 <div class="btn-header">
                     <img src="images/user-alt.png" alt="" class="btn-header-img">
@@ -80,7 +84,7 @@
         <div class="explore_nav-home">
             <p class="explore_nav-home-text padding160left">Explore</p>
         </div>
-        <div class="space_between padding160right">
+        <div class="explore_nav-features-box space_between padding160right">
             <div class="explore_nav-features">
                 <div class="explore_features-box">
                     <a href="#features" class="explore_features-link">Key Features</a>
@@ -117,45 +121,56 @@
         
     </div>
 
-    <section class="section-car padding160">
-        <div class="car-col-1">
-            <div class="car-col-1-back">
-                <i class="fas fa-solid fa-chevron-left car-back-cheveron"></i>
-                <a href="" class="car-col-1-back-text">BACK</a>
+    <section class="section-car">
+
+        <div class="section-col-container">
+            <div class="car-col-1">
+                <div class="car-col-1-back">
+                    <i class="fas fa-solid fa-chevron-left car-back-cheveron"></i>
+                    <a href="" class="car-col-1-back-text">BACK</a>
+                </div>
+                <p class="car-col-1-title-text">2020 Mitsubishi Outlander ES 2.4</p>
+                <div class="car-col-1-info">
+                    <div class="car-col-1-vin">
+                        <div class="car-col-1-info-container">
+                            <p class="car-info-text">VIN: XXXXXXXXXXXXXXXXX</p>
+                        </div>
+                        <div class="car-col-1-info-container">
+                            <p class="car-info-text">Stock: XXXXX</p>
+                        </div>
+                    </div>               
+                    <div class="car-col-1-colors">
+                        <div class="car-col-1-info-container">
+                            <div class="car-info-color-exterior"></div>
+                            <p class="car-info-text">Alloy Silver Metallic Exterior</p>
+                        </div>
+                        <div class="car-col-1-info-container">
+                            <div class="car-info-color-interior"></div>
+                            <p class="car-info-text">Black Cloth Interior</p>
+                        </div>
+                    </div>        
+                </div>
+                <div class="car-col-1-img-container">  
+                    <!-- <div class="picture-fill">
+                        <img src="images/100.png" alt="" class="car-col-1-img" id="big-car">
+                    </div> -->
+                    <img src="images/100.png" alt="" class="car-col-1-img" id="big-car">          
+                </div>
             </div>
-            <p class="car-col-1-title-text">2020 Mitsubishi Outlander ES 2.4</p>
-            <div class="car-col-1-info">
-                <div class="car-col-1-info-container">
-                    <p class="car-info-text">VIN: XXXXXXXXXXXXXXXXX</p>
+            <div class="car-col-2">
+                <div class="car-col-2-imgs" id="small-car">
+                    <img src="images/103.png" alt="" id="small-car-1">
+                    <img src="images/102.png" alt="" id="small-car-2">
+                    <img src="images/101.png" alt="" id="small-car-3">
+                    <img src="" alt="" class="remove" id="img-temp">
+                </div>        
+                <div class="car-col-2-btn">
+                    <div class="car-col-2-btn-background"></div>
+                    <i class="fas fa-solid fa-chevron-down car-col-2-btn-cheveron"></i>
                 </div>
-                <div class="car-col-1-info-container">
-                    <p class="car-info-text">Stock: XXXXX</p>
-                </div>
-                <div class="car-col-1-info-container">
-                    <div class="car-info-color-exterior"></div>
-                    <p class="car-info-text">Alloy Silver Metallic Exterior</p>
-                </div>
-                <div class="car-col-1-info-container">
-                    <div class="car-info-color-interior"></div>
-                    <p class="car-info-text">Black Cloth Interior</p>
-                </div>
-            </div>
-            <div class="car-col-1-img-container">
-                <img src="images/100.png" alt="" class="car-col-1-img" id="big-car">
             </div>
         </div>
-        <div class="car-col-2">
-            <div class="car-col-2-imgs" id="small-car">
-                <img src="images/103.png" alt="" id="small-car-1">
-                <img src="images/102.png" alt="" id="small-car-2">
-                <img src="images/101.png" alt="" id="small-car-3">
-                <img src="" alt="" class="remove" id="img-temp">
-            </div>        
-            <div class="car-col-2-btn">
-                <div class="car-col-2-btn-background"></div>
-                <i class="fas fa-solid fa-chevron-down car-col-2-btn-cheveron"></i>
-            </div>
-        </div>
+        
         <div class="car-col-3">
             <div class="car-col-3-options">
                 <a href="#" class="car-col-3-options-link" id="lease">Lease</a>
@@ -198,10 +213,10 @@
                                 <p class="selections-col-1-name">Down Payment</p>
                             </div>
                             <div class="selections-container-col-2">
-                                <span>$</span><p class="selections-col-2-price" id="down-price">3,000</p>
+                                <span>$</span><input type="number" id="downPrice" class="col-2-input" value="3000" min="0" max="50000">
                             </div>
                             <div class="selections-container-col-3">
-                                <input type="range" min="1" max="50000" value="3000" class="selections-container-slider" id="downRange">
+                                <input type="range" min="0" max="50000" value="3000" class="selections-container-slider" id="downRange">
                             </div>
                         </div>
                         <div class="car-col-3-selections-trade">
@@ -209,7 +224,7 @@
                                 <p class="selections-col-1-name">Your Trade</p>
                             </div>
                             <div class="selections-container-col-2">
-                                <span>$</span><p class="selections-col-2-price" id="trade-price">$3,000</p>
+                                <span>$</span><input type="number" id="tradePrice" class="col-2-input" value="3000" min="0" max="50000">
                             </div>
                             <div class="selections-container-col-3">
                                 <input type="range" min="1" max="50000" value="3000" class="selections-container-slider" id="tradeRange">
@@ -311,59 +326,83 @@
         <h2 class="sub-heading">Vehicle Details</h2>
 
         <div class="section-details-container">
-            <div class="section-details-buttons">
-                <div class="section-details-btn details-btn-active">
-                    <div class="details-btn-img-box">
-
-                        <!-- <svg>
-                            <use xlink:href="images/Group 1786.svg"/>
-                        </svg> -->
-
-                        <img src="images/Group 1786.svg" alt="" class="details-btn-img">
+                <div class="section-details-buttons">
+                    <div class="section-details-btn details-btn-active">
+                        <div class="details-btn-img-box">
+                            <img src="images/Group 1786.svg" alt="" class="details-btn-img">
+                        </div>
+                        <a href="#" class="details-btn-text">Overview</a>
                     </div>
-                    <a href="#" class="details-btn-text">Overview</a>
+                    <div class="section-details-btn">
+                        <div class="details-btn-img-box">
+                            <img src="images/Group 1787.svg" alt="" class="details-btn-img">
+                        </div>
+                        <a href="#" class="details-btn-text">Highlights</a>
+                    </div>
+                    <div class="section-details-btn">
+                        <div class="details-btn-img-box">
+                            <img src="images/Clipboard Icon.svg" alt="" class="details-btn-img">
+                        </div>
+                        <a href="#" class="details-btn-text">Standard Features</a>
+                    </div>
+                    <div class="section-details-btn">
+                        <div class="details-btn-img-box">
+                            <img src="images/Group 1783.svg" alt="" class="details-btn-img">
+                        </div>
+                        <a href="#" class="details-btn-text">Specifications</a>
+                    </div>
+                    <div class="section-details-btn">
+                        <div class="details-btn-img-box">
+                            <img src="images/Document Icon.svg" alt="" class="details-btn-img">
+                        </div>
+                        <a href="#" class="details-btn-text">Window Sticker</a>
+                    </div>
+                    <div class="section-details-btn">
+                        <div class="details-btn-img-box">
+                            <img src="images/Download Icon.svg" alt="" class="details-btn-img">
+                        </div>
+                        <a href="#" class="details-btn-text">Brochure</a>
+                    </div>
                 </div>
+                <div class="section-details-overview">
+                        <p class="details-overview-summary">The Outlander is in a crowded field, up against best-sellers including the Honda CR-V, Toyota RAV4, Ford Escape
+                            and the Subaru Forester. Against these, the Outlander offers a comparable exterior but manages to pack seating for more people inside.
+                            Interior space and fuel efficiency are both big strengths. Mitsubishi also says that the Outlander is one of the most fuel-efficient utility vehicles offered in the North American market
+                            with standard 7-passeneger seating (it gets an EPA-estimated 31 mpg highway). Futhermore, the hybrid model shows a real commitment to the use of alternative energy offering 22 miles without
+                            a single drop of gasoline. The Outlander can tow up to 3,500 pounds, which should be plenty for a small boat or a couple of jet skis. Ground clearance for the Outlander is 8.5 inches, which should give it an easier time 
+                            with snow than some other crossovers.
+                        </p>
+                </div>          
+        </div>
+
+        <div class="details-buttons-mobile">
                 <div class="section-details-btn">
                     <div class="details-btn-img-box">
                         <img src="images/Group 1787.svg" alt="" class="details-btn-img">
                     </div>
-                    <a href="#" class="details-btn-text">Highlights</a>
+                    <a href="#" class="details-btn-text">Key Features</a>
+                    <i class="fas fa-solid fa-chevron-down mobile-details-cheveron"></i>
                 </div>
-                <div class="section-details-btn">
-                    <div class="details-btn-img-box">
-                        <img src="images/Clipboard Icon.svg" alt="" class="details-btn-img">
-                    </div>
-                    <a href="#" class="details-btn-text">Standard Features</a>
-                </div>
-                <div class="section-details-btn">
-                    <div class="details-btn-img-box">
-                        <img src="images/Group 1783.svg" alt="" class="details-btn-img">
-                    </div>
-                    <a href="#" class="details-btn-text">Specifications</a>
-                </div>
-                <div class="section-details-btn">
-                    <div class="details-btn-img-box">
-                        <img src="images/Document Icon.svg" alt="" class="details-btn-img">
-                    </div>
-                    <a href="#" class="details-btn-text">Window Sticker</a>
-                </div>
-                <div class="section-details-btn">
-                    <div class="details-btn-img-box">
-                        <img src="images/Download Icon.svg" alt="" class="details-btn-img">
-                    </div>
-                    <a href="#" class="details-btn-text">Brochure</a>
+                <div class="details-overview-mobile">
+                    <ul class="overview-mobile-list">
+                        <li class="overview-mobile-list-item">Black Roof Rails</li>
+                        <li class="overview-mobile-list-item">Auto-Dimming Rearview Mirror with Homelink&copy;</li>
+                        <li class="overview-mobile-list-item">Soft-Touch Seating Surfaces</li>
+                        <li class="overview-mobile-list-item">Steering Wheel Voice Recognition</li>
+                        <li class="overview-mobile-list-item">New 8" Smartphone-link Display</li>
+                        <li class="overview-mobile-list-item">Audio System plus Apple CarPlay&copy; and Android Auto&trade;</li>
+                        <li class="overview-mobile-list-item">Dual Front USB Charging Ports</li>
+                        <li class="overview-mobile-list-item">SiriusXM&copy; with 3-Month All Access Trial</li>
+                        <li class="overview-mobile-list-item">Heated Front Seats Steering Wheel</li>
+                        <li class="overview-mobile-list-item">Voice Recognition Control</li>
+                        <li class="overview-mobile-list-item">18" Two-Tone Alloy Wheels Rearview Camera</li>
+                        <li class="overview-mobile-list-item">Foward Collision Mitgation System with Pedestrian Detection (FCM)</li>
+                        <li class="overview-mobile-list-item">4 Lane Departure Waring System Automatic High Beam (AHB)</li>
+                        <li class="overview-mobile-list-item">Fast-Key Passive Entry with Push Button Start</li>
+                        <li class="overview-mobile-list-item">Power Side Mirrors with Turn Indicators</li>
+                    </ul>
                 </div>
             </div>
-            <div class="section-details-overview">
-                    <p class="details-overview-summary">The Outlander is in a crowded field, up against best-sellers including the Honda CR-V, Toyota RAV4, Ford Escape
-                        and the Subaru Forester. Against these, the Outlander offers a comparable exterior but manages to pack seating for more people inside.
-                        Interior space and fuel efficiency are both big strengths. Mitsubishi also says that the Outlander is one of the most fuel-efficient utility vehicles offered in the North American market
-                        with standard 7-passeneger seating (it gets an EPA-estimated 31 mpg highway). Futhermore, the hybrid model shows a real commitment to the use of alternative energy offering 22 miles without
-                        a single drop of gasoline. The Outlander can tow up to 3,500 pounds, which should be plenty for a small boat or a couple of jet skis. Ground clearance for the Outlander is 8.5 inches, which should give it an easier time 
-                        with snow than some other crossovers.
-                    </p>
-            </div>
-        </div>
         
     </section>
 
@@ -630,7 +669,7 @@
 
     <footer class="footer">
         <div class="footer-top">
-            <div class="footer-col">
+            <div class="footer-col" id="footer-socials">
                 <button class="footer-btn">
                     <img src="images/Global Components-Icons-phone.png" alt="" class="footer-btn-icon">
                     <span>Contact Us</span>
@@ -642,63 +681,85 @@
                     <img src="images/Group 1775.png" alt="" class="footer-socials-img">
                 </div>
             </div>
-            <div class="footer-col">
+            <div class="footer-col" id="footer-col-1">
                 <h3 class="footer-title">Hometown Motors</h3>
-                <div class="footer-contact-box">
-                    <div class="footer-icon-box">
-                        <img src="images/206.png" alt="" class="footer-contact-icon">
-                    </div>                    
-                    <a href="#" class="footer-contact-text">Sales: 999 Fake St, - Fake, PA 9999</a>
-                </div>
-                <div class="footer-contact-box">
-                    <div class="footer-icon-box">
-                        <img src="images/205.png" alt="" class="footer-contact-icon">
-                    </div>                    
-                    <a href="#" class="footer-contact-text">Sales: (999)999-9999</a>
-                </div>
-                <div class="footer-contact-box">
-                    <div class="footer-icon-box">
-                        <img src="images/205.png" alt="" class="footer-contact-icon">
-                    </div>                  
-                    <a href="#" class="footer-contact-text">Service: (999)999-9999</a>
-                </div>
-                <div class="footer-contact-box">
-                    <div class="footer-icon-box">
-                        <img src="images/205.png" alt="" class="footer-contact-icon">
+                <div class="footer-hometown" id="footer-hometown">
+                    <div class="footer-contact-box">
+                        <div class="footer-icon-box">
+                            <img src="images/206.png" alt="" class="footer-contact-icon">
+                        </div>                    
+                        <a href="#" class="footer-contact-text">Sales: 999 Fake St, - Fake, PA 9999</a>
                     </div>
-                    <a href="#" class="footer-contact-text">Parts: (999)999-9999</a>
+                    <div class="footer-contact-box">
+                        <div class="footer-icon-box">
+                            <img src="images/205.png" alt="" class="footer-contact-icon">
+                        </div>                    
+                        <a href="#" class="footer-contact-text">Sales: (999)999-9999</a>
+                    </div>
+                    <div class="footer-contact-box">
+                        <div class="footer-icon-box">
+                            <img src="images/205.png" alt="" class="footer-contact-icon">
+                        </div>                  
+                        <a href="#" class="footer-contact-text">Service: (999)999-9999</a>
+                    </div>
+                    <div class="footer-contact-box">
+                        <div class="footer-icon-box">
+                            <img src="images/205.png" alt="" class="footer-contact-icon">
+                        </div>
+                        <a href="#" class="footer-contact-text">Parts: (999)999-9999</a>
+                    </div>
                 </div>
             </div>
-            <div class="footer-col">
-                <h3 class="footer-title">Inventory</h3>
-                <a href="" class="footer-top-link">New Vehicles</a>
-                <a href="" class="footer-top-link">Used Vehicles</a>
-                <a href="" class="footer-top-link">Certified Vehicles</a>
-                <a href="" class="footer-top-link">Vehicles Under $10k</a>
+            <div class="footer-col" id="footer-col-2">
+                <input type="checkbox" id="footer-inventory-toggle">
+                <label for="footer-inventory-toggle" class="footer-inventory-header">
+                    <h3 class="footer-title">Inventory</h3>
+                    <i class="fas fa-solid fa-chevron-down footer-cheveron"></i>
+                </label>
+                <div class="footer-inventory">
+                    <a href="#" class="footer-top-link">New Vehicles</a>
+                    <a href="#" class="footer-top-link">Used Vehicles</a>
+                    <a href="#" class="footer-top-link">Certified Vehicles</a>
+                    <a href="#" class="footer-top-link">Vehicles Under $10k</a>
+                </div>             
             </div>
-            <div class="footer-col">
-                <h3 class="footer-title">Service</h3>
-                <a href="" class="footer-top-link">Service Center</a>
-                <a href="" class="footer-top-link">Schedule Service</a>
-                <a href="" class="footer-top-link">Maintenance Schedules</a>
-                <a href="" class="footer-top-link">Service Specials</a>
-                <a href="" class="footer-top-link">Service FAQ</a>
+            <div class="footer-col" id="footer-col-3">
+                <input type="checkbox" id="footer-service-toggle">
+                <label for="footer-service-toggle" class="footer-service-header">
+                    <h3 class="footer-title">Service</h3>
+                    <i class="fas fa-solid fa-chevron-down footer-cheveron"></i>
+                </label>  
+                <div class="footer-service">
+                    <a href="#" class="footer-top-link">Service Center</a>
+                    <a href="#" class="footer-top-link">Schedule Service</a>
+                    <a href="#" class="footer-top-link">Maintenance Schedules</a>
+                    <a href="#" class="footer-top-link">Service Specials</a>
+                    <a href="#" class="footer-top-link">Service FAQ</a>
+                </div>    
             </div>
-            <div class="footer-col">
-                <h3 class="footer-title">Financing</h3>
-                <a href="" class="footer-top-link">Finance</a>
-                <a href="" class="footer-top-link">Apply For Financing</a>
-                <a href="" class="footer-top-link">Value Your Trade</a>
-                <a href="" class="footer-top-link">Payment Calculator</a>
-                <a href="" class="footer-top-link">Mobile View</a>
+            <div class="footer-col" id="footer-col-4">
+                <input type="checkbox" id="footer-finance-toggle">
+                <label for="footer-finance-toggle" class="footer-finance-header">
+                    <h3 class="footer-title">Financing</h3>
+                    <i class="fas fa-solid fa-chevron-down footer-cheveron"></i>
+                </label>  
+                <div class="footer-finance">
+                    <a href="#" class="footer-top-link">Finance</a>
+                    <a href="#" class="footer-top-link">Apply For Financing</a>
+                    <a href="#" class="footer-top-link">Value Your Trade</a>
+                    <a href="#" class="footer-top-link">Payment Calculator</a>
+                    <a href="#" class="footer-top-link">Mobile View</a>
+                </div>      
             </div>
         </div>
-        <div class="footer-bottom">
+        <div class="footer-bottom" id="footer-col-5">
             <div class="footer-bottom-left">
-                <a href="" class="footer-bottom-link">Privacy Policy</a>
-                <a href="" class="footer-bottom-link">Contact Us</a>
-                <a href="" class="footer-bottom-link">Sitemap</a>
-                <a href="" class="footer-bottom-link">Sitemap XML</a>
+                <div class="footer-bottom-left-mobile">
+                    <a href="#" class="footer-bottom-link">Privacy Policy</a>
+                    <a href="#" class="footer-bottom-link">Contact Us</a>
+                    <a href="#" class="footer-bottom-link">Sitemap</a>
+                </div>
+                <a href="#" class="footer-bottom-link" id="footer-bottom-link-xml">Sitemap XML</a>
             </div>
             <div class="footer-bottom-right">
                 <p class="foot-bottom-copyright">Copyright &copy; 2022 Hometown Motors</p>
@@ -724,7 +785,7 @@
         </div>
         <div class="popup__content">
             <div class="popup-content-left">
-                <div class="popup-selections popup-padding">
+                <div class="popup-selections popup-padding popup-bottom-margin">
                     <div class="car-col-3-selections-prices padding165">
                         <div class="selections-prices-msrp">
                             <p class="selections-prices-name">MSRP</p>
@@ -744,35 +805,47 @@
                         </div>
                     </div>
                     <div class="popup-selections-down">
-                        <p class="popup-down-name selections-col-1-name">Your Trade</p>
+                        <div class="selections-mobile-container-1">
+                            <p class="popup-down-name selections-col-1-name">Your Trade</p>
                         <div class="popup-col-2 selections-container-col-2">
-                            <span>$</span><p class="popup-down-price selections-col-2-price" id="popup-down-price">3,000</p>
+                            <span>$</span><input type="number" id="popupTradePrice" class="col-2-input" value="3000" min="0" max="50000"></p>
                         </div>
                         <div class="popup-slider selections-container-col-3">
-                            <input type="range" min="1" max="50000" value="3000" class="popup-slider selections-container-slider" id="popupdownRange">
+                            <input type="range" min="1" max="50000" value="3000" class="popup-slider selections-container-slider" id="popuptradeRange">
                         </div>
-                        <div class="selections-container-col-1">
-                            <p class="popup-down-name-2 popup-down-name selections-col-1-name">Term</p>
                         </div>
-                        <div class="popup-selections-col-5 selections-container-col-2-big">
-                            <p class="selections-col-2-big-info" id="term-months">36 Months</p>
-                            <i class="fas fa-solid fa-chevron-down car-col-3-btn-cheveron"></i>
+                        
+
+                        <div class="selections-mobile-container-2">
+                            <div class="selections-container-col-1">
+                                <p class="popup-down-name-2 popup-down-name selections-col-1-name">Term</p>
+                            </div>
+                            <div class="popup-selections-col-5 selections-container-col-2-big">
+                                <p class="selections-col-2-big-info" id="popup-term-months">36 Months</p>
+                                <i class="fas fa-solid fa-chevron-down car-col-3-btn-cheveron"></i>
+                            </div>
                         </div>
+            
                     </div>
-                    <div class="popup-selections-trade">
-                        <p class="popup-down-name selections-col-1-name">Down Payment</p>
-                        <div class="popup-col-2 selections-container-col-2">
-                            <span>$</span><p class="popup-down-price selections-col-2-price" id="popup-down-price">3,000</p>
+                    <div class="popup-selections-trade popup-bottom-margin">
+                        <div class="selections-mobile-container-1">
+                            <p class="popup-down-name selections-col-1-name">Down Payment</p>
+                            <div class="popup-col-2 selections-container-col-2">
+                                <span>$</span><input type="number" id="popupDownPrice" class="col-2-input" value="3000" min="0" max="50000">
+                            </div>
+                            <div class="popup-slider selections-container-col-3">
+                                <input type="range" min="1" max="50000" value="3000" class="popup-slider selections-container-slider" id="popupdownRange">
+                            </div>
                         </div>
-                        <div class="popup-slider selections-container-col-3">
-                            <input type="range" min="1" max="50000" value="3000" class="popup-slider selections-container-slider" id="popupdownRange">
-                        </div>
-                        <div class="selections-container-col-1">
-                            <p class="popup-down-name-2 popup-down-name selections-col-1-name">Miles Per Year</p>
-                        </div>
-                        <div class="popup-selections-col-5 selections-container-col-2-big">
-                            <p class="selections-col-2-big-info" id="term-months">10,000 Miles</p>
-                            <i class="fas fa-solid fa-chevron-down car-col-3-btn-cheveron"></i>
+
+                        <div class="selections-mobile-container-2">
+                            <div class="selections-container-col-1">
+                                <p class="popup-down-name-2 popup-down-name selections-col-1-name">Miles Per Year</p>
+                            </div>
+                            <div class="popup-selections-col-5 selections-container-col-2-big">
+                                <p class="selections-col-2-big-info" id="popup-term-mpy">10,000 Miles</p>
+                                <i class="fas fa-solid fa-chevron-down car-col-3-btn-cheveron"></i>
+                            </div>
                         </div>
                     </div>
                     <p class="popup-selections-disclaimer">
@@ -784,7 +857,7 @@
                 </div>
 
 
-                <div class="popup-discounts popup-padding">
+                <div class="popup-discounts popup-padding popup-bottom-margin">
                     <div class="popup-section-heading">
                         <h1 class="popup-section-title">Discounts & Incentives</h1>
                         <p class="popup-section-subheading">Additional incentives may be available. Please select from the offers below.</p>
@@ -817,7 +890,7 @@
                 </div>
 
 
-                <div class="popup-trade popup-padding">
+                <div class="popup-trade popup-padding popup-bottom-margin">
                     <div class="popup-section-heading">
                         <h1 class="popup-section-title">Your Trade In</h1>
                         <p class="popup-section-subheading">If you have a vehicle to trade in, we'll apply the trade-in value to your order.</p>
@@ -884,19 +957,106 @@
                                 or drive-off (simply adjust those if you want a lower combined amount).
                             </p>
                         </div>
-                       
+                    </div>
+                    <div class="trade-content-bottom">
+                        <div class="trade-text-box">
+                            <p class="trade-text-title">Do not include my trade-in</p>
+                            <p class="trade-text-subtitle">Skip this step if you don't have a trade-in</p>
+                        </div>
+                        <div class="trade-bottom-check">
+                            <i class="fas fa-solid fa-check trade-check"></i>
+                        </div>          
                     </div>
                 </div>
-                <div class="popup-credit popup-padding">
-
+                <div class="popup-credit popup-padding popup-bottom-margin">
+                    <div class="popup-section-heading">
+                        <h1 class="popup-section-title">Your Credit Score</h1>
+                        <p class="popup-section-subheading margin-bottom-18">YOu can let us know exactly what your credit score is if you know it, or you can use the slider to select a range.</p>
+                        <a href="#" class="popup-section-link">What is my credit score?</a>
+                    </div>
+                    <div class="popup-credit-bottom">
+                        <div class="popup-code-apply no-margin">
+                            <input type="number" name="discount" id="popup-code" class="popup-code-input" placeholder="Enter Code">
+                            <button class="popup-code-btn">Apply</button>
+                        </div>
+                        <div class="credit-bottom-right">
+                            <div class="credit-bottom-right-top">
+                                <p class="credit-bottom-number">300-579</p>
+                                <p class="credit-bottom-number">580-669</p>
+                                <p class="credit-bottom-number">670-739</p>
+                                <p class="credit-bottom-number">740-799</p>
+                                <p class="credit-bottom-number">800-850</p>
+                            </div>
+                            <div class="credit-bottom-right-bottom">
+                                <div class="credit-content-slider-container">
+                                    <div class="credit-content-slider"></div>
+                                    <div class="content-slider-thumb credit-slider-thumb-1"></div>
+                                    <div class="content-slider-thumb credit-slider-thumb-2"></div>
+                                    <div class="content-slider-thumb credit-slider-thumb-3"></div>
+                                    <div class="content-slider-thumb credit-slider-thumb-4"></div>
+                                    <div class="content-slider-thumb credit-slider-thumb-5"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="popup-taxes popup-padding">
-
+                <div class="popup-taxes popup-padding popup-bottom-margin">
+                    <div class="popup-section-heading">
+                        <h1 class="popup-section-title">Taxes & Fees</h1>
+                        <p class="popup-section-subheading margin-bottom-18">Taxes & Fees can be spread out in your monthly payments or added (one time) to your Down Payment.</p>
+                    </div>
+                    <div class="taxes-content-row">
+                        <div class="taxes-buttons-left">
+                            <button class="taxes-content-button">Monthly Payment</button>
+                            <button class="taxes-content-button">Down Payment</button>
+                        </div>
+                        <div class="popup-code-apply margin-auto">
+                            <input type="number" name="discount" id="popup-code" class="popup-code-input" placeholder="Enter Code">
+                            <button class="popup-code-btn">Apply</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="popup-plans popup-padding">
-
+                <div class="popup-plans popup-padding popup-bottom-margin">
+                    <div class="popup-section-heading">
+                        <h1 class="popup-section-title">Service & Protection Plans</h1>
+                        <p class="popup-section-subheading">With your new car purchase we offer Express Store pricing on our Service & Protection Plans. Our protection packages can provide peace of mind during the ownership of your vehicle.</p>
+                    </div>
+                    <div class="popup-discount-row">
+                        <div class="discount-row-info">
+                            <p class="discount-row-name">Road Hazard Tire & Wheel</p>
+                            <a href="#" class="discount-row-link">Mitsubishi Financial</a>
+                        </div>
+                        <div class="discount-row-right">
+                            <h3 class="discount-row-subtract">$44.39</h3>
+                            <span>/ mo</span>
+                        </div>
+                    </div>
+                    <div class="popup-discount-row">
+                        <div class="discount-row-info">
+                            <p class="discount-row-name">Paintless Dent Repair</p>
+                            <a href="#" class="discount-row-link">Mitsubishi Financial</a>
+                        </div>
+                        <div class="discount-row-right">
+                            <h3 class="discount-row-subtract">$22.39</h3>
+                            <span>/ mo</span>
+                        </div>
+                    </div>
+                    <div class="popup-discount-row">
+                        <div class="discount-row-info">
+                            <p class="discount-row-name">Car Care Maintenance Plan Plus</p>
+                            <a href="#" class="discount-row-link">Mitsubishi Financial</a>
+                        </div>
+                        <div class="discount-row-right">
+                            <h3 class="discount-row-subtract">$39.39</h3>
+                            <span>/ mo</span>
+                        </div>
+                        
+                    </div>
+                    <div class="popup-btn-row">
+                        <button class="popup-plans-btn">View All Plans</button>
+                    </div>        
                 </div>
-                <div class="popup-disclaimer">
+                <div class="popup-disclaimer popup-bottom-margin">
                     <p class="popup-disclaimer-text">
                         * Payment subject to approval of credit with a credit score of 760 or higher through Mitsubishi Financial.
                         Includes all taxes and fees, and any manufacturer incentives. Security deposit waived. 25&cent;/mile per mile overage charge applies.
@@ -915,7 +1075,87 @@
                 </div>
             </div>
             <div class="popup-content-right">
-
+                <div class="popup-right-title">
+                    <div class="popup-section-heading">
+                        <h1 class="popup-section-title right-title-margin">Lease Details Summary</h1>
+                        <p class="popup-section-subheading right-subhead-margin">2020 Mitsubishi Outlander ES 2.4</p>
+                        <div class="popup-section-title-boxes">
+                            <div class="popup-section-title-box">
+                                <p>Stock</p><span>XXXXXXX</span>
+                            </div>
+                            <div class="popup-section-title-box">
+                                <p>Model</p><span>XXXXXXXX</span>
+                            </div>  
+                            <div class="popup-section-title-box">
+                                <p>VIN</p><span>XXXXXXXXXXXXXXXXX</span>
+                            </div>                   
+                        </div>
+                    </div>
+                </div>
+                <div class="popup-right-car">
+                    <div class="right-car-row">
+                        <img src="images/121.png" alt="" class="right-car-img">
+                        <div class="right-car-box">
+                            <h4>Lease payment</h4>
+                            <div class="right-car-box-money">
+                                <span>$</span>
+                                <h1>169.06</h1>
+                            </div>
+                            <p>per month for 48 months</p>
+                        </div>
+                    </div>
+                    <p class="right-car-bottom-text">incl. taxes and fees, on approved credit after $1,000 dealer dicount</p>
+                </div>
+                <div class="popup-right-total">
+                    <div class="right-total-top">
+                        <div class="total-row">
+                            <p class="total-row-text">MSRP</p>
+                            <p class="total-row-text">$25,385</p>
+                        </div>
+                        <div class="total-row">
+                            <p class="total-row-text">Incentives</p>
+                            <p class="total-row-text">-$1,000</p>
+                        </div>
+                        <div class="total-row">
+                            <p class="total-row-text">Dealer Discount</p>
+                            <p class="total-row-text">-$1,000</p>
+                        </div>
+                        <div class="total-row">
+                            <p class="total-row-text">Service & Protection Plans</p>
+                            <p class="total-row-text">$395</p>
+                        </div>
+                        <div class="total-row">
+                            <p class="total-row-text">Taxes & Fees</p>
+                            <p class="total-row-text">$1,918</p>
+                        </div>
+                        <div class="total-row">
+                            <p class="total-row-text total-row-text-bold">Your Price</p>
+                            <p class="total-row-text total-row-text-red">$25,698</p>
+                        </div>
+                    </div>
+                    <div class="right-total-bottom">
+                        <div class="total-row">
+                            <p class="total-row-text">Taxes & Fees</p>
+                            <p class="total-row-text">$1,918</p>
+                        </div>
+                        <div class="total-row">
+                            <p class="total-row-text total-row-text-bold">Monthly Payment</p>
+                            <p class="total-row-text total-row-text-bold">$169.06</p>
+                        </div>
+                        <div class="total-row">
+                            <p class="total-row-text">Due at Signing</p>
+                            <p class="total-row-text">$3,000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup-right-disclaimer">
+                    <p>This offer expires 2/29/2020</p>
+                    <a href="#">View Disclaimer</a>
+                </div>
+                <div class="popup-right-btns">
+                    <button class="popup-right-button">Save Offer</button>
+                    <button class="popup-right-button">Contact Dealership</button>
+                </div>
             </div>      
         </div>
     </div>

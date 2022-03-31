@@ -3,18 +3,48 @@
 
 let sliderDown = document.getElementById("downRange");
 let sliderTrade = document.getElementById("tradeRange");
-let downValue = document.getElementById("down-price");
-let tradeValue = document.getElementById("trade-price");
+let downValue = document.getElementById("downPrice");
+let tradeValue = document.getElementById("tradePrice");
+let popupsliderDown = document.getElementById("popupdownRange");
+let popupsliderTrade = document.getElementById("popuptradeRange");
+let popupdownValue = document.getElementById("popupDownPrice");
+let popuptradeValue = document.getElementById("popupTradePrice");
 
-downValue.innerHTML = sliderDown.value;
-tradeValue.innerHTML = sliderTrade.value;
+// downValue.value = sliderDown.value;
+// tradeValue.innerHTML = sliderTrade.value;
+// popupdownValue.innerHTML = popupsliderDown.value;
+// popuptradeValue.innerHTML = popupsliderTrade.value;
 
 sliderDown.oninput = function() {
-    downValue.innerHTML = this.value;
+    downValue.value = this.value;
+}
+
+downValue.oninput = function() {
+    sliderDown.value = this.value;
 }
 
 sliderTrade.oninput = function() {
-    tradeValue.innerHTML = this.value;
+    tradeValue.value = this.value;
+}
+
+tradeValue.oninput = function() {
+    sliderTrade.value = this.value;
+}
+
+popupsliderDown.oninput = function() {
+    popupdownValue.value = this.value;
+}
+
+popupsliderTrade.oninput = function() {
+    popuptradeValue.value = this.value;
+}
+
+popupdownValue.oninput = function() {
+    popupsliderDown.value = this.value;
+}
+
+popuptradeValue.oninput = function() {
+    popupsliderTrade.value = this.value;
 }
 
 // SLIDER TRADE
@@ -26,9 +56,14 @@ function updateGradientTrade(rangeValue) {
   
   // Update gradient onload
 updateGradientTrade(sliderTrade.value);
+
   
 sliderTrade.addEventListener('input', (e) => {
-    tradeValue.innerHTML = e.target.value;
+    tradeValue.value = e.target.value;
+    updateGradientTrade(e.target.value);
+  });
+tradeValue.addEventListener('input', (e) => {
+    sliderTrade.value = e.target.value;
     updateGradientTrade(e.target.value);
   });
 
@@ -43,8 +78,46 @@ sliderTrade.addEventListener('input', (e) => {
   updateGradientDown(sliderDown.value);
 
   sliderDown.addEventListener('input', (e) => {
-    downValue.innerHTML = e.target.value;
+    downValue.value = e.target.value;
     updateGradientDown(e.target.value);
+  });
+  downValue.addEventListener('input', (e) => {
+    sliderDown.value = e.target.value;
+    updateGradientDown(e.target.value);
+  });
+
+  function updatepopGradientTrade(rangeValue) {
+    const percentage = (rangeValue - popupsliderTrade.min) / (popupsliderTrade.max - popupsliderTrade.min) * 100;
+    popupsliderTrade.style.backgroundImage = `linear-gradient(90deg, #ec0000 ${percentage}%, transparent ${percentage}%)`;
+  }
+  
+  // Update gradient onload
+updatepopGradientTrade(popupsliderTrade.value);
+  
+popupsliderTrade.addEventListener('input', (e) => {
+    popuptradeValue.value = e.target.value;
+    updatepopGradientTrade(e.target.value);
+  });
+  popuptradeValue.addEventListener('input', (e) => {
+    popupsliderTrade.value = e.target.value;
+    updatepopGradientTrade(e.target.value);
+  });
+
+  function updatepopGradientDown(rangeValue) {
+    const percentage = (rangeValue - popupsliderDown.min) / (popupsliderDown.max - popupsliderDown.min) * 100;
+    popupsliderDown.style.backgroundImage = `linear-gradient(90deg, #ec0000 ${percentage}%, transparent ${percentage}%)`;
+  }
+  
+  // Update gradient onload
+updatepopGradientDown(popupsliderDown.value);
+  
+popupsliderDown.addEventListener('input', (e) => {
+    popupdownValue.value = e.target.value;
+    updatepopGradientDown(e.target.value);
+  });
+  popupdownValue.addEventListener('input', (e) => {
+    popupsliderDown.value = e.target.value;
+    updatepopGradientDown(e.target.value);
   });
 
 
